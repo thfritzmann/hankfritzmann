@@ -1,0 +1,59 @@
+a:link{
+    color:#262626;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#262626;
+    text-decoration: none;
+}
+
+
+
+if (typeof(Storage)!== undefined){
+    
+    var currentStyleSheet = document.getElementById("currentTheme");
+    console.log(currentStyleSheet);
+
+    if(currentStyleSheet.href.contains == "light" || window.localStorage.getItem("theme") == "true"){
+        window.localStorage.setItem("theme", true);
+    }
+    else{
+        if(currentStyleSheet.href.contains != "dark"){
+            window.localStorage.setItem("theme", false);
+            $(".logo").css("transform","rotate(180deg)");
+            $("html").fadeOut("slow", function(){
+                currentStyleSheet.href = "style_dark.css";
+                $("html").fadeIn("slow");
+            });
+        }
+        else{
+            window.localStorage.setItem("theme", false);
+        }
+    }
+}
+
+
+
+    position:relative;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+
+
+
+style="border-radius: 5px;"
+
+
+
+__scripts__\photoslide-engine.js
+__scripts__\jquery-3.6.0.min.js
+__style__\style_light.css
+__style__\style_photoSlide.css
+__site_assets__\sunsetwillow_Logo.png
+__site_assets__\grass_animation_lightTheme_1080p.mp4
+
+Photos
