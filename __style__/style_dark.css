@@ -161,12 +161,14 @@ a:active {
 
 .logo {
   width: 200px;
+  height: 152px;
   transition: ease-in-out 0.5s;
   transform: rotate(0deg);
 }
 
 .logo:hover {
   width: 220px;
+  height: 168px;
 }
 
 #currentTheme {
@@ -217,6 +219,7 @@ a:active {
 
 .thumbnail {
   width: 500px;
+  height: 281px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
